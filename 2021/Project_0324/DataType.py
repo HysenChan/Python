@@ -53,3 +53,35 @@ print(string[0:])  # HelloWorld
 print(string * 2)  # HelloWorldHelloWorld
 print(string + "Test")  # HelloWorldTest
 print(len(string))  # 10
+
+List = ['a', 'b', 'c', 'd', 'e']
+print(List[0:])
+
+ListMixture1 = ['abc', 123, 3.14, 'hello', 3 * 2]
+ListMixture2 = ['xzy', 456, "JQK"]
+print(ListMixture2 * 2)
+print(ListMixture1 + ListMixture2)
+ListMixture = ListMixture1 + ListMixture2
+print(ListMixture[1:3:-1])
+
+ListMixture2[0:] = [1, 2, 3]
+print(ListMixture2)
+ListMixture2[0:] = []
+print(ListMixture2)
+
+
+# 翻转字符串
+def reverseWord(input):
+    inputWords = input.split(" ")
+
+    inputWords = inputWords[-1::-1]
+
+    output = ' '.join(inputWords)
+
+    return output
+
+
+if __name__ == "__main__":
+    inputStr = 'A B C D E F G'
+    rw = reverseWord(inputStr)
+    print(rw)  # G F E D C B A

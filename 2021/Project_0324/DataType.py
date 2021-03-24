@@ -33,3 +33,23 @@ print(type(B()) == A)  # False
 print(isinstance(A(), A))  # True
 print(isinstance(A(), B))  # False
 print(isinstance(B(), A))  # True
+
+# 基本运算
+print(1 + 1)  # 2
+print(2.5 - 2)  # 0.5
+print(3 * 2)  # 6
+print(3 / 2)  # 1.5 浮点数
+print(3 // 2)  # 1  整数
+print(3 % 2)  # 1
+print(2 ** 3)  # 8  乘方
+
+# 字符串
+string = 'HelloWorld'
+print(string)  # HelloWorld
+print(string[0:-1])  # HelloWorl
+print(string[0])  # H
+print(string[2:5])  # llo
+print(string[0:])  # HelloWorld
+print(string * 2)  # HelloWorldHelloWorld
+print(string + "Test")  # HelloWorldTest
+print(len(string))  # 10

@@ -101,3 +101,14 @@ print(sites1 - sites)
 print(sites | sites1)
 print(sites & sites1)
 print(sites ^ sites1)
+
+# 字典
+dict = {'one': '1', 2: '2'}
+print(dict)
+print(dict['one'])
+print(dict[2])
+print(dict.keys())  # 所有键
+print(dict.values())  # 所有值
+
+dict1 = {x: x ** 2 for x in (2, 4, 6)}
+print(dict1)

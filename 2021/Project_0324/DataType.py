@@ -85,3 +85,19 @@ if __name__ == "__main__":
     inputStr = 'A B C D E F G'
     rw = reverseWord(inputStr)
     print(rw)  # G F E D C B A
+
+sites = {'a', 'b', 'c', 'd', 'e', 'c'}
+print(sites)  # 输出集合，重复的元素被自动去掉
+
+if 'a' in sites:
+    print('a is in sites!')
+else:
+    print('a not in sites!')
+
+sites1 = set('abxyz')
+print(sites)
+print(sites - sites1)
+print(sites1 - sites)
+print(sites | sites1)
+print(sites & sites1)
+print(sites ^ sites1)

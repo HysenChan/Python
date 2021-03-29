@@ -4,15 +4,15 @@ class MyNumbers:
         return self
 
     def __next__(self):
-        var = self.a
-        self.a += 1
-        return var
+        if self.a <= 3:
+            var = self.a
+            self.a += 1
+            return var
+        else:
+            raise StopIteration
 
 
-myclass = MyNumbers()
-myiter = iter(myclass)
-print(next(myiter))
-print(next(myiter))
-print(next(myiter))
-print(next(myiter))
-print(next(myiter))
+myClass = MyNumbers()
+myIter = iter(myClass)
+for x in myIter:
+    print(x)

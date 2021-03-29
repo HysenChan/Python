@@ -9,3 +9,6 @@ print(type(tuple2))  # tuple
 tuple3 = ['A', 'C', 'B', 'D', 'Z', 'X', 'E']
 print(max(tuple3))
 print(min(tuple3))
+
+dict = {'name': 'Hysen', 'Age': 18}
+print(dict)
